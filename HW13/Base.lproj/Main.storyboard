@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="imh-n9-puT">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-u5-hlO">
+                                <rect key="frame" x="165" y="741" width="61" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnH-Cd-TTT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ZKR-SC-pyz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.1538461538462" y="3.5545023696682461"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ZaC-0l-LhM">
+            <objects>
+                <viewController id="4N7-ev-BsE" customClass="ViewController2" customModule="HW13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pOi-NT-bhp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfd-sT-fnP">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wb-Rl-5Iy">
+                                        <rect key="frame" x="332" y="100" width="48" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Flash Off Icon"/>
+                                        <connections>
+                                            <action selector="toggleFlash:" destination="4N7-ev-BsE" eventType="touchUpInside" id="a2Z-Ua-Pf5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cV-aZ-1AV">
+                                        <rect key="frame" x="10" y="640" width="48" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Photo Camera Icon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdX-Q7-CIU">
+                                        <rect key="frame" x="10" y="688" width="48" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Video Camera Icon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maN-er-7eq">
+                                        <rect key="frame" x="170" y="676" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="aVl-Fc-35x"/>
+                                            <constraint firstAttribute="height" constant="50" id="m23-fH-n57"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled"/>
+                                        <connections>
+                                            <action selector="captureImage:" destination="4N7-ev-BsE" eventType="touchUpInside" id="DeZ-tA-ztk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6t-in-vLf">
+                                        <rect key="frame" x="332" y="148" width="48" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Rear Camera Icon"/>
+                                        <connections>
+                                            <action selector="switchCameras:" destination="4N7-ev-BsE" eventType="touchUpInside" id="G1G-mA-iyt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="g6t-in-vLf" secondAttribute="trailing" constant="10" id="7x5-HE-RNx"/>
+                                    <constraint firstAttribute="trailing" secondItem="7wb-Rl-5Iy" secondAttribute="trailing" constant="10" id="8Zo-8Q-56B"/>
+                                    <constraint firstAttribute="bottom" secondItem="maN-er-7eq" secondAttribute="bottom" constant="35" id="9XB-mZ-HYb"/>
+                                    <constraint firstItem="KdX-Q7-CIU" firstAttribute="top" secondItem="6cV-aZ-1AV" secondAttribute="bottom" constant="10" id="Amr-c3-7CI"/>
+                                    <constraint firstItem="6cV-aZ-1AV" firstAttribute="leading" secondItem="Dfd-sT-fnP" secondAttribute="leading" constant="10" id="FLI-r9-b9M"/>
+                                    <constraint firstItem="g6t-in-vLf" firstAttribute="top" secondItem="7wb-Rl-5Iy" secondAttribute="bottom" constant="10" id="Iw8-lg-ucB"/>
+                                    <constraint firstItem="g6t-in-vLf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dfd-sT-fnP" secondAttribute="leading" constant="20" symbolic="YES" id="REP-Yo-H5y"/>
+                                    <constraint firstItem="7wb-Rl-5Iy" firstAttribute="top" secondItem="Dfd-sT-fnP" secondAttribute="top" constant="100" id="bw5-Rd-oL2"/>
+                                    <constraint firstItem="maN-er-7eq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KdX-Q7-CIU" secondAttribute="trailing" constant="8" symbolic="YES" id="fp4-Ni-6uf"/>
+                                    <constraint firstItem="KdX-Q7-CIU" firstAttribute="leading" secondItem="Dfd-sT-fnP" secondAttribute="leading" constant="10" id="hh9-Wy-uj4"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6cV-aZ-1AV" secondAttribute="trailing" constant="20" symbolic="YES" id="iNR-gY-iUz"/>
+                                    <constraint firstAttribute="bottom" secondItem="KdX-Q7-CIU" secondAttribute="bottom" constant="35" id="uIM-ug-dAG"/>
+                                    <constraint firstItem="7wb-Rl-5Iy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dfd-sT-fnP" secondAttribute="leading" constant="20" symbolic="YES" id="uxo-ls-3kb"/>
+                                    <constraint firstItem="maN-er-7eq" firstAttribute="centerX" secondItem="Dfd-sT-fnP" secondAttribute="centerX" id="vWc-ES-I4X"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rcs-mR-EVu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rcs-mR-EVu" firstAttribute="bottom" secondItem="Dfd-sT-fnP" secondAttribute="bottom" id="Iiu-Fp-pId"/>
+                            <constraint firstItem="Dfd-sT-fnP" firstAttribute="trailing" secondItem="Rcs-mR-EVu" secondAttribute="trailing" id="cch-WW-D1M"/>
+                            <constraint firstItem="Dfd-sT-fnP" firstAttribute="top" secondItem="pOi-NT-bhp" secondAttribute="top" id="vzk-XX-cZh"/>
+                            <constraint firstItem="Dfd-sT-fnP" firstAttribute="leading" secondItem="pOi-NT-bhp" secondAttribute="leading" id="zdu-T0-Fkw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="TC8-FW-ofg"/>
+                    <connections>
+                        <outlet property="captureButton" destination="maN-er-7eq" id="u1s-9s-bq0"/>
+                        <outlet property="capturePreviewView" destination="Dfd-sT-fnP" id="zYO-aX-alI"/>
+                        <outlet property="photoModeButton" destination="6cV-aZ-1AV" id="vt2-FP-Cvh"/>
+                        <outlet property="toggleCameraButton" destination="g6t-in-vLf" id="vpS-7l-yDG"/>
+                        <outlet property="toggleFlashButton" destination="7wb-Rl-5Iy" id="ZhB-M3-YZC"/>
+                        <outlet property="videoModeButton" destination="KdX-Q7-CIU" id="c6q-Z7-Iv5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4v-co-OZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864.6153846153845" y="19.90521327014218"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BX5-RB-Ba6">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="imh-n9-puT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zR0-hy-w9Y">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="nNM-p9-Igi"/>
+                        <segue destination="4N7-ev-BsE" kind="relationship" relationship="viewControllers" id="vMU-LI-UE0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4K-U8-wBx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1582" y="-1039"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Flash Off Icon" width="24" height="24"/>
+        <image name="Photo Camera Icon" width="24" height="24"/>
+        <image name="Rear Camera Icon" width="24" height="24"/>
+        <image name="Video Camera Icon" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
